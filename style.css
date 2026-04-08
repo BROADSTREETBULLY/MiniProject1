@@ -23,6 +23,7 @@ h1 {
   color: greenyellow;
   background-color: black;
   border: greenyellow dashed 3px;
+  border-radius: 15px;
 }
 
 #counter {
@@ -65,12 +66,37 @@ pre {
     blink-caret 0.75s step-end 3 3.5s forwards;
 }
 
+.typewriter2 {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  display: inline-block;
+  letter-spacing: 0.15em;
+  animation:
+    typing2 5s steps(100, end),
+    blink-caret 0.75s step-end 3 3.5s forwards;
+}
+
+.typewriter2:hover {
+    color: hotpink;
+  font-size: 50px
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 15ch;
+  }
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
   }
 }
 
@@ -96,6 +122,7 @@ pre {
   border-color: orange;
   color: orange;
   cursor: pointer;
+  border: orange dotted 5px;
 }
 
 button:hover {
@@ -107,4 +134,40 @@ button:hover {
 
 a:link {
   text-decoration: none;
+}
+
+.navbar {
+  background-color: 0, 0, 0, 0;
+}
+
+.navbar-toggler {
+  background-color: greenyellow;
+}
+.nav-link {
+  color: orange;
+  font-family: "VT323", monospace;
+    font-size: 30px;
+
+}
+
+.nav-link:hover {
+  color: hotpink;
+  font-size: 50px;
+}
+
+.welcome {
+  font-size: 150px;
+  text-align: left;
+}
+
+.welcome:hover{
+  color: hotpink;
+  font-size: 160px
+}
+
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
